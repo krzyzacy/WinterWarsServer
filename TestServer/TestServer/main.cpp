@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <stdio.h>
 #include <string.h>
@@ -13,16 +14,6 @@
 #define MAX_CLIENTS 10
 #define SERVER_PORT 60000
 #define ROOM_CAPACITY 16
-
-enum GameMessages
-{
-	ID_GAME_MESSAGE_1 = ID_USER_PACKET_ENUM + 1,
-	CREATE_ROOM,
-	SEARCH_ROOM,
-	NO_ROOM,
-	TEAM_CHANGE,
-	START_GAME
-};
 
 enum TEAM_INDEX	{
 	NEUTRAL, GREEN, RED, BLUE, ORANGE
@@ -176,6 +167,7 @@ int main(void)
 						RakNet::BitStream bsOut;
 						bsOut.Write((RakNet::MessageID)SEARCH_ROOM);
 						bsOut.Write(clients.size());
+						bsOut.Write(packet->systemAddress);
 						for(vector<Client>::iterator it = clients.begin(); it != clients.end(); ++it)
 						{
 							bsOut.Write(*it);
@@ -217,6 +209,18 @@ int main(void)
 				}
 			}
 			break;
+
+			case BUILDING:
+				{
+					printf("Building Event \n");
+					for(vector<Client>::iterator it = clients.begin(); it != clients.end(); ++it)
+					{
+						if(it->ip_addr != packet->systemAddress)
+							peer->Send(&bsIn,HIGH_PRIORITY,RELIABLE_ORDERED,0,it->ip_addr,false);
+					}
+
+				}
+				break;
 			
 			default:
 				printf("Message with identifier %i has arrived.\n", packet->data[0]);
