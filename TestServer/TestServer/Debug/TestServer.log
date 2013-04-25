@@ -1,21 +1,418 @@
-﻿Build started 4/11/2013 10:52:24 PM.
-     1>Project "\\storage.adsroot.itcs.umich.edu\home\windat.V2\documents\visual studio 2010\Projects\TestServer\TestServer\TestServer.vcxproj" on node 2 (build target(s)).
+﻿Build started 4/25/2013 4:08:49 PM.
+     1>Project "H:\WinterWarsServer\TestServer\TestServer\TestServer.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\TestServer.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"H:\RakNet_PC-4.068\DependentExtensions\PostgreSQLInterface" /I"H:\RakNet_PC-4.068\Source" /I"H:\RakNet_PC-4.068\DependentExtensions\Lobby2" /I"H:\RakNet_PC-4.068\DependentExtensions\Lobby2\PGSQL" /I"H:\RakNet_PC-4.068\DependentExtensions\Lobby2\Rooms" /I"H:\postgresql-9.2.4-1-windows-x64-binaries\pgsql\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IH:\WinterWarsServer\TestServer\TestServer\RakNet /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp RakNet\Base64Encoder.cpp RakNet\BitStream.cpp RakNet\CCRakNetSlidingWindow.cpp RakNet\CCRakNetUDT.cpp RakNet\CheckSum.cpp RakNet\CloudClient.cpp RakNet\CloudCommon.cpp RakNet\CloudServer.cpp RakNet\CommandParserInterface.cpp RakNet\ConnectionGraph2.cpp RakNet\ConsoleServer.cpp RakNet\DataCompressor.cpp RakNet\DirectoryDeltaTransfer.cpp RakNet\DS_BytePool.cpp RakNet\DS_ByteQueue.cpp RakNet\DS_HuffmanEncodingTree.cpp RakNet\DS_Table.cpp RakNet\DynDNS.cpp RakNet\EmailSender.cpp RakNet\EpochTimeToString.cpp RakNet\FileList.cpp RakNet\FileListTransfer.cpp RakNet\FileOperations.cpp RakNet\FormatString.cpp RakNet\FullyConnectedMesh2.cpp RakNet\Getche.cpp RakNet\Gets.cpp RakNet\GetTime.cpp RakNet\gettimeofday.cpp RakNet\GridSectorizer.cpp RakNet\HTTPConnection.cpp RakNet\HTTPConnection2.cpp RakNet\IncrementalReadInterface.cpp RakNet\Itoa.cpp RakNet\LinuxStrings.cpp RakNet\LocklessTypes.cpp RakNet\LogCommandParser.cpp RakNet\MessageFilter.cpp RakNet\NatPunchthroughClient.cpp RakNet\NatPunchthroughServer.cpp RakNet\NatTypeDetectionClient.cpp RakNet\NatTypeDetectionCommon.cpp RakNet\NatTypeDetectionServer.cpp RakNet\NetworkIDManager.cpp RakNet\NetworkIDObject.cpp RakNet\PacketConsoleLogger.cpp RakNet\PacketFileLogger.cpp RakNet\PacketizedTCP.cpp RakNet\PacketLogger.cpp RakNet\PacketOutputWindowLogger.cpp RakNet\PluginInterface2.cpp RakNet\Rackspace.cpp RakNet\RakMemoryOverride.cpp RakNet\RakNetCommandParser.cpp RakNet\RakNetSocket.cpp RakNet\RakNetSocket2.cpp RakNet\RakNetSocket2_360_720.cpp RakNet\RakNetSocket2_Berkley.cpp RakNet\RakNetSocket2_Berkley_NativeClient.cpp RakNet\RakNetSocket2_NativeClient.cpp RakNet\RakNetSocket2_PS3_PS4.cpp RakNet\RakNetSocket2_Vita.cpp RakNet\RakNetSocket2_WindowsStore8.cpp RakNet\RakNetSocket2_Windows_Linux.cpp RakNet\RakNetSocket2_Windows_Linux_360.cpp RakNet\RakNetStatistics.cpp RakNet\RakNetTransport2.cpp RakNet\RakNetTypes.cpp RakNet\RakPeer.cpp RakNet\RakSleep.cpp RakNet\RakString.cpp RakNet\RakThread.cpp RakNet\RakWString.cpp RakNet\Rand.cpp RakNet\ReadyEvent.cpp RakNet\RelayPlugin.cpp RakNet\ReliabilityLayer.cpp RakNet\ReplicaManager3.cpp RakNet\Router2.cpp RakNet\RPC4Plugin.cpp RakNet\SecureHandshake.cpp RakNet\SendToThread.cpp RakNet\SHA1.cpp RakNet\SignaledEvent.cpp RakNet\SimpleMutex.cpp RakNet\SocketLayer.cpp RakNet\StatisticsHistory.cpp RakNet\StringCompressor.cpp RakNet\StringTable.cpp RakNet\SuperFastHash.cpp RakNet\TableSerializer.cpp RakNet\TCPInterface.cpp RakNet\TeamBalancer.cpp RakNet\TeamManager.cpp RakNet\TelnetTransport.cpp RakNet\ThreadsafePacketLogger.cpp RakNet\TwoWayAuthentication.cpp RakNet\UDPForwarder.cpp RakNet\UDPProxyClient.cpp RakNet\UDPProxyCoordinator.cpp RakNet\UDPProxyServer.cpp RakNet\VariableDeltaSerializer.cpp RakNet\VariableListDeltaTracker.cpp RakNet\VariadicSQLParser.cpp RakNet\VitaIncludes.cpp RakNet\WSAStartupSingleton.cpp RakNet\_FindFirst.cpp
+         _FindFirst.cpp
+         WSAStartupSingleton.cpp
+         VitaIncludes.cpp
+         VariadicSQLParser.cpp
+         VariableListDeltaTracker.cpp
+         VariableDeltaSerializer.cpp
+         UDPProxyServer.cpp
+         UDPProxyCoordinator.cpp
+         UDPProxyClient.cpp
+         UDPForwarder.cpp
+         TwoWayAuthentication.cpp
+         ThreadsafePacketLogger.cpp
+     1>h:\winterwarsserver\testserver\testserver\raknet\threadsafepacketlogger.cpp(34): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+         TelnetTransport.cpp
+     1>h:\winterwarsserver\testserver\testserver\raknet\telnettransport.cpp(66): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>h:\winterwarsserver\testserver\testserver\raknet\telnettransport.cpp(76): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_vsnprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\telnettransport.cpp(84): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(175) : see declaration of 'strncat'
+     1>h:\winterwarsserver\testserver\testserver\raknet\telnettransport.cpp(137): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>h:\winterwarsserver\testserver\testserver\raknet\telnettransport.cpp(139): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>h:\winterwarsserver\testserver\testserver\raknet\telnettransport.cpp(305): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>h:\winterwarsserver\testserver\testserver\raknet\telnettransport.cpp(318): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+         TeamManager.cpp
+         TeamBalancer.cpp
+         TCPInterface.cpp
+         TableSerializer.cpp
+         SuperFastHash.cpp
+     1>h:\winterwarsserver\testserver\testserver\raknet\superfasthash.cpp(91): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+         StringTable.cpp
+     1>h:\winterwarsserver\testserver\testserver\raknet\stringtable.cpp(66): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>h:\winterwarsserver\testserver\testserver\raknet\stringtable.cpp(127): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(188) : see declaration of 'strncpy'
+         StringCompressor.cpp
+         Generating Code...
+         Compiling...
+         StatisticsHistory.cpp
+         SocketLayer.cpp
+         SimpleMutex.cpp
+         SignaledEvent.cpp
+         SHA1.cpp
+     1>h:\winterwarsserver\testserver\testserver\raknet\sha1.cpp(201): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+     1>h:\winterwarsserver\testserver\testserver\raknet\sha1.cpp(288): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\sha1.cpp(289): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>h:\winterwarsserver\testserver\testserver\raknet\sha1.cpp(293): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\sha1.cpp(294): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>h:\winterwarsserver\testserver\testserver\raknet\sha1.cpp(301): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\sha1.cpp(302): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>h:\winterwarsserver\testserver\testserver\raknet\sha1.cpp(306): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\sha1.cpp(307): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>h:\winterwarsserver\testserver\testserver\raknet\sha1.cpp(312): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+         SendToThread.cpp
+         SecureHandshake.cpp
+         RPC4Plugin.cpp
+     1>h:\winterwarsserver\testserver\testserver\raknet\rpc4plugin.cpp(269): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+         Router2.cpp
+         ReplicaManager3.cpp
+         ReliabilityLayer.cpp
+         RelayPlugin.cpp
+         ReadyEvent.cpp
+         Rand.cpp
+         RakWString.cpp
+     1>h:\winterwarsserver\testserver\testserver\raknet\rakwstring.cpp(82): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(283) : see declaration of 'wcscpy'
+     1>h:\winterwarsserver\testserver\testserver\raknet\rakwstring.cpp(102): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdlib.h(498) : see declaration of 'mbstowcs'
+     1>h:\winterwarsserver\testserver\testserver\raknet\rakwstring.cpp(111): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdlib.h(498) : see declaration of 'mbstowcs'
+     1>h:\winterwarsserver\testserver\testserver\raknet\rakwstring.cpp(154): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(276) : see declaration of 'wcscat'
+     1>h:\winterwarsserver\testserver\testserver\raknet\rakwstring.cpp(184): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(276) : see declaration of 'wcscat'
+     1>h:\winterwarsserver\testserver\testserver\raknet\rakwstring.cpp(375): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(283) : see declaration of 'wcscpy'
+         RakThread.cpp
+         RakString.cpp
+     1>h:\winterwarsserver\testserver\testserver\raknet\rakstring.cpp(155): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>h:\winterwarsserver\testserver\testserver\raknet\rakstring.cpp(179): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>h:\winterwarsserver\testserver\testserver\raknet\rakstring.cpp(197): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>h:\winterwarsserver\testserver\testserver\raknet\rakstring.cpp(338): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>h:\winterwarsserver\testserver\testserver\raknet\rakstring.cpp(339): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>h:\winterwarsserver\testserver\testserver\raknet\rakstring.cpp(901): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(188) : see declaration of 'strncpy'
+     1>h:\winterwarsserver\testserver\testserver\raknet\rakstring.cpp(1225): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\rakstring.cpp(1239): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\rakstring.cpp(1316): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_vsnprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\rakstring.cpp(1341): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_vsnprintf'
+         RakSleep.cpp
+         RakPeer.cpp
+     1>h:\winterwarsserver\testserver\testserver\raknet\rakpeer.cpp(1861): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+         RakNetTypes.cpp
+     1>h:\winterwarsserver\testserver\testserver\raknet\raknettypes.cpp(98): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>h:\winterwarsserver\testserver\testserver\raknet\raknettypes.cpp(257): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>h:\winterwarsserver\testserver\testserver\raknet\raknettypes.cpp(279): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>h:\winterwarsserver\testserver\testserver\raknet\raknettypes.cpp(282): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+         Generating Code...
+         Compiling...
+         RakNetTransport2.cpp
+     1>h:\winterwarsserver\testserver\testserver\raknet\raknettransport2.cpp(53): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_vsnprintf'
+         RakNetStatistics.cpp
+     1>h:\winterwarsserver\testserver\testserver\raknet\raknetstatistics.cpp(21): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\raknetstatistics.cpp(34): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\raknetstatistics.cpp(57): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\raknetstatistics.cpp(66): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\raknetstatistics.cpp(67): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>h:\winterwarsserver\testserver\testserver\raknet\raknetstatistics.cpp(76): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\raknetstatistics.cpp(77): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>h:\winterwarsserver\testserver\testserver\raknet\raknetstatistics.cpp(125): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\raknetstatistics.cpp(134): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\raknetstatistics.cpp(135): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>h:\winterwarsserver\testserver\testserver\raknet\raknetstatistics.cpp(144): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\raknetstatistics.cpp(145): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+         RakNetSocket2_Windows_Linux_360.cpp
+         RakNetSocket2_Windows_Linux.cpp
+         RakNetSocket2_WindowsStore8.cpp
+         RakNetSocket2_Vita.cpp
+         RakNetSocket2_PS3_PS4.cpp
+         RakNetSocket2_NativeClient.cpp
+         RakNetSocket2_Berkley_NativeClient.cpp
+         RakNetSocket2_Berkley.cpp
+         RakNetSocket2_360_720.cpp
+         RakNetSocket2.cpp
+     1>h:\winterwarsserver\testserver\testserver\raknet\raknetsocket2_berkley_nativeclient.cpp(82): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+         RakNetSocket.cpp
+         RakNetCommandParser.cpp
+         RakMemoryOverride.cpp
+         Rackspace.cpp
+         PluginInterface2.cpp
+         PacketOutputWindowLogger.cpp
+         PacketLogger.cpp
+     1>h:\winterwarsserver\testserver\testserver\raknet\packetlogger.cpp(58): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\packetlogger.cpp(85): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\packetlogger.cpp(105): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\packetlogger.cpp(159): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\packetlogger.cpp(180): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\packetlogger.cpp(241): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\packetlogger.cpp(412): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(188) : see declaration of 'strncpy'
+     1>h:\winterwarsserver\testserver\testserver\raknet\packetlogger.cpp(417): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(188) : see declaration of 'strncpy'
+     1>h:\winterwarsserver\testserver\testserver\raknet\packetlogger.cpp(432): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\time.inl(112) : see declaration of 'localtime'
+     1>h:\winterwarsserver\testserver\testserver\raknet\packetlogger.cpp(435): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\packetlogger.cpp(436): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+         PacketizedTCP.cpp
+         Generating Code...
+         Compiling...
+         PacketFileLogger.cpp
+     1>h:\winterwarsserver\testserver\testserver\raknet\packetfilelogger.cpp(25): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\packetfilelogger.cpp(27): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\packetfilelogger.cpp(28): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+         PacketConsoleLogger.cpp
+         NetworkIDObject.cpp
+         NetworkIDManager.cpp
+         NatTypeDetectionServer.cpp
+     1>h:\winterwarsserver\testserver\testserver\raknet\nattypedetectionserver.cpp(68): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+         NatTypeDetectionCommon.cpp
+         NatTypeDetectionClient.cpp
+         NatPunchthroughServer.cpp
+     1>h:\winterwarsserver\testserver\testserver\raknet\natpunchthroughserver.cpp(190): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\natpunchthroughserver.cpp(540): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+         NatPunchthroughClient.cpp
+         MessageFilter.cpp
+         LogCommandParser.cpp
+     1>h:\winterwarsserver\testserver\testserver\raknet\logcommandparser.cpp(136): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_vsnprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\logcommandparser.cpp(150): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+         LocklessTypes.cpp
+         LinuxStrings.cpp
+         Itoa.cpp
+         IncrementalReadInterface.cpp
+     1>h:\winterwarsserver\testserver\testserver\raknet\incrementalreadinterface.cpp(8): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+         HTTPConnection2.cpp
+         HTTPConnection.cpp
+         GridSectorizer.cpp
+         gettimeofday.cpp
+     1>h:\winterwarsserver\testserver\testserver\raknet\gettimeofday.cpp(53): warning C4996: '__timezone': This function or variable may be unsafe. Consider using _get_timezone instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\time.h(139) : see declaration of '__timezone'
+     1>h:\winterwarsserver\testserver\testserver\raknet\gettimeofday.cpp(54): warning C4996: '__daylight': This function or variable may be unsafe. Consider using _get_daylight instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\time.h(131) : see declaration of '__daylight'
+         GetTime.cpp
+         Generating Code...
+         Compiling...
+         Gets.cpp
+         Getche.cpp
+         FullyConnectedMesh2.cpp
+         FormatString.cpp
+     1>h:\winterwarsserver\testserver\testserver\raknet\formatstring.cpp(16): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_vsnprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\formatstring.cpp(27): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_vsnprintf'
+         FileOperations.cpp
+         FileListTransfer.cpp
+         FileList.cpp
+     1>h:\winterwarsserver\testserver\testserver\raknet\filelist.cpp(113): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+     1>h:\winterwarsserver\testserver\testserver\raknet\filelist.cpp(228): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>h:\winterwarsserver\testserver\testserver\raknet\filelist.cpp(235): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>h:\winterwarsserver\testserver\testserver\raknet\filelist.cpp(244): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>h:\winterwarsserver\testserver\testserver\raknet\filelist.cpp(254): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>h:\winterwarsserver\testserver\testserver\raknet\filelist.cpp(256): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>h:\winterwarsserver\testserver\testserver\raknet\filelist.cpp(285): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>h:\winterwarsserver\testserver\testserver\raknet\filelist.cpp(286): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>h:\winterwarsserver\testserver\testserver\raknet\filelist.cpp(294): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+     1>h:\winterwarsserver\testserver\testserver\raknet\filelist.cpp(331): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+     1>h:\winterwarsserver\testserver\testserver\raknet\filelist.cpp(350): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>h:\winterwarsserver\testserver\testserver\raknet\filelist.cpp(351): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>h:\winterwarsserver\testserver\testserver\raknet\filelist.cpp(352): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>h:\winterwarsserver\testserver\testserver\raknet\filelist.cpp(536): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>h:\winterwarsserver\testserver\testserver\raknet\filelist.cpp(538): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>h:\winterwarsserver\testserver\testserver\raknet\filelist.cpp(539): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+     1>h:\winterwarsserver\testserver\testserver\raknet\filelist.cpp(595): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>h:\winterwarsserver\testserver\testserver\raknet\filelist.cpp(597): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>h:\winterwarsserver\testserver\testserver\raknet\filelist.cpp(598): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+     1>h:\winterwarsserver\testserver\testserver\raknet\filelist.cpp(684): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>h:\winterwarsserver\testserver\testserver\raknet\filelist.cpp(686): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+         EpochTimeToString.cpp
+     1>h:\winterwarsserver\testserver\testserver\raknet\epochtimetostring.cpp(20): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\time.inl(112) : see declaration of 'localtime'
+         EmailSender.cpp
+     1>h:\winterwarsserver\testserver\testserver\raknet\emailsender.cpp(86): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\emailsender.cpp(104): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\emailsender.cpp(113): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\emailsender.cpp(115): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\emailsender.cpp(122): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\emailsender.cpp(124): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\emailsender.cpp(140): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\emailsender.cpp(145): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\emailsender.cpp(150): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\emailsender.cpp(166): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\emailsender.cpp(171): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\emailsender.cpp(174): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\emailsender.cpp(178): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\emailsender.cpp(263): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\emailsender.cpp(266): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\emailsender.cpp(280): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\emailsender.cpp(285): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+         DynDNS.cpp
+         DS_Table.cpp
+     1>h:\winterwarsserver\testserver\testserver\raknet\ds_table.cpp(99): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>h:\winterwarsserver\testserver\testserver\raknet\ds_table.cpp(147): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>h:\winterwarsserver\testserver\testserver\raknet\ds_table.cpp(242): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>h:\winterwarsserver\testserver\testserver\raknet\ds_table.cpp(946): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\ds_table.cpp(953): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\ds_table.cpp(970): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(188) : see declaration of 'strncpy'
+     1>h:\winterwarsserver\testserver\testserver\raknet\ds_table.cpp(985): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\ds_table.cpp(998): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(188) : see declaration of 'strncpy'
+     1>h:\winterwarsserver\testserver\testserver\raknet\ds_table.cpp(1012): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>h:\winterwarsserver\testserver\testserver\raknet\ds_table.cpp(1037): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(188) : see declaration of 'strncpy'
+         DS_HuffmanEncodingTree.cpp
+         DS_ByteQueue.cpp
+         DS_BytePool.cpp
+         DirectoryDeltaTransfer.cpp
+     1>h:\winterwarsserver\testserver\testserver\raknet\directorydeltatransfer.cpp(37): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>h:\winterwarsserver\testserver\testserver\raknet\directorydeltatransfer.cpp(38): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>h:\winterwarsserver\testserver\testserver\raknet\directorydeltatransfer.cpp(53): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>h:\winterwarsserver\testserver\testserver\raknet\directorydeltatransfer.cpp(54): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>h:\winterwarsserver\testserver\testserver\raknet\directorydeltatransfer.cpp(114): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(188) : see declaration of 'strncpy'
+     1>h:\winterwarsserver\testserver\testserver\raknet\directorydeltatransfer.cpp(116): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>h:\winterwarsserver\testserver\testserver\raknet\directorydeltatransfer.cpp(148): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>h:\winterwarsserver\testserver\testserver\raknet\directorydeltatransfer.cpp(152): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>h:\winterwarsserver\testserver\testserver\raknet\directorydeltatransfer.cpp(154): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+         DataCompressor.cpp
+         ConsoleServer.cpp
+     1>h:\winterwarsserver\testserver\testserver\raknet\consoleserver.cpp(305): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+         ConnectionGraph2.cpp
+         CommandParserInterface.cpp
+         CloudServer.cpp
+         Generating Code...
+         Compiling...
+         CloudCommon.cpp
+         CloudClient.cpp
+         CheckSum.cpp
+         CCRakNetUDT.cpp
+         CCRakNetSlidingWindow.cpp
+         BitStream.cpp
+     1>h:\winterwarsserver\testserver\testserver\raknet\bitstream.cpp(835): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>h:\winterwarsserver\testserver\testserver\raknet\bitstream.cpp(878): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+         Base64Encoder.cpp
          main.cpp
-     1>\\storage.adsroot.itcs.umich.edu\home\windat.v2\documents\visual studio 2010\projects\testserver\testserver\main.cpp(41): warning C4101: 'str' : unreferenced local variable
+     1>h:\winterwarsserver\testserver\testserver\main.cpp(32): warning C4101: 'str' : unreferenced local variable
+         Generating Code...
        ManifestResourceCompile:
          c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\TestServer.exe.embed.manifest.res" Debug\TestServer_manifest.rc 
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"\\storage.adsroot.itcs.umich.edu\home\windat.v2\documents\visual studio 2010\Projects\TestServer\Debug\TestServer.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\TestServer.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"\\storage.adsroot.itcs.umich.edu\home\windat.v2\documents\visual studio 2010\Projects\TestServer\Debug\TestServer.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"\\storage.adsroot.itcs.umich.edu\home\windat.v2\documents\visual studio 2010\Projects\TestServer\Debug\TestServer.lib" /MACHINE:X86 Debug\TestServer.exe.embed.manifest.res
-         Debug\Lobby2Client.obj
-         Debug\Lobby2Message.obj
-         Debug\Lobby2Plugin.obj
-         Debug\Lobby2Presence.obj
-         Debug\Lobby2ResultCode.obj
-         Debug\Lobby2Server.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"H:\WinterWarsServer\TestServer\Debug\TestServer.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\TestServer.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"H:\WinterWarsServer\TestServer\Debug\TestServer.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"H:\WinterWarsServer\TestServer\Debug\TestServer.lib" /MACHINE:X86 Debug\TestServer.exe.embed.manifest.res
+         Debug\main.obj
          Debug\Base64Encoder.obj
          Debug\BitStream.obj
          Debug\CCRakNetSlidingWindow.obj
@@ -123,132 +520,17 @@
          Debug\VitaIncludes.obj
          Debug\WSAStartupSingleton.obj
          Debug\_FindFirst.obj
-         Debug\main.obj
        Manifest:
          c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\TestServer.exe.embed.manifest" /manifest Debug\TestServer.exe.intermediate.manifest
-         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\TestServer.exe.embed.manifest.res" Debug\TestServer_manifest.rc 
+         All outputs are up-to-date.
        LinkEmbedManifest:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"\\storage.adsroot.itcs.umich.edu\home\windat.v2\documents\visual studio 2010\Projects\TestServer\Debug\TestServer.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\TestServer.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"\\storage.adsroot.itcs.umich.edu\home\windat.v2\documents\visual studio 2010\Projects\TestServer\Debug\TestServer.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"\\storage.adsroot.itcs.umich.edu\home\windat.v2\documents\visual studio 2010\Projects\TestServer\Debug\TestServer.lib" /MACHINE:X86 Debug\TestServer.exe.embed.manifest.res
-         Debug\Lobby2Client.obj
-         Debug\Lobby2Message.obj
-         Debug\Lobby2Plugin.obj
-         Debug\Lobby2Presence.obj
-         Debug\Lobby2ResultCode.obj
-         Debug\Lobby2Server.obj
-         Debug\Base64Encoder.obj
-         Debug\BitStream.obj
-         Debug\CCRakNetSlidingWindow.obj
-         Debug\CCRakNetUDT.obj
-         Debug\CheckSum.obj
-         Debug\CloudClient.obj
-         Debug\CloudCommon.obj
-         Debug\CloudServer.obj
-         Debug\CommandParserInterface.obj
-         Debug\ConnectionGraph2.obj
-         Debug\ConsoleServer.obj
-         Debug\DataCompressor.obj
-         Debug\DirectoryDeltaTransfer.obj
-         Debug\DS_BytePool.obj
-         Debug\DS_ByteQueue.obj
-         Debug\DS_HuffmanEncodingTree.obj
-         Debug\DS_Table.obj
-         Debug\DynDNS.obj
-         Debug\EmailSender.obj
-         Debug\EpochTimeToString.obj
-         Debug\FileList.obj
-         Debug\FileListTransfer.obj
-         Debug\FileOperations.obj
-         Debug\FormatString.obj
-         Debug\FullyConnectedMesh2.obj
-         Debug\Getche.obj
-         Debug\Gets.obj
-         Debug\GetTime.obj
-         Debug\gettimeofday.obj
-         Debug\GridSectorizer.obj
-         Debug\HTTPConnection.obj
-         Debug\HTTPConnection2.obj
-         Debug\IncrementalReadInterface.obj
-         Debug\Itoa.obj
-         Debug\LinuxStrings.obj
-         Debug\LocklessTypes.obj
-         Debug\LogCommandParser.obj
-         Debug\MessageFilter.obj
-         Debug\NatPunchthroughClient.obj
-         Debug\NatPunchthroughServer.obj
-         Debug\NatTypeDetectionClient.obj
-         Debug\NatTypeDetectionCommon.obj
-         Debug\NatTypeDetectionServer.obj
-         Debug\NetworkIDManager.obj
-         Debug\NetworkIDObject.obj
-         Debug\PacketConsoleLogger.obj
-         Debug\PacketFileLogger.obj
-         Debug\PacketizedTCP.obj
-         Debug\PacketLogger.obj
-         Debug\PacketOutputWindowLogger.obj
-         Debug\PluginInterface2.obj
-         Debug\Rackspace.obj
-         Debug\RakMemoryOverride.obj
-         Debug\RakNetCommandParser.obj
-         Debug\RakNetSocket.obj
-         Debug\RakNetSocket2.obj
-         Debug\RakNetSocket2_360_720.obj
-         Debug\RakNetSocket2_Berkley.obj
-         Debug\RakNetSocket2_Berkley_NativeClient.obj
-         Debug\RakNetSocket2_NativeClient.obj
-         Debug\RakNetSocket2_PS3_PS4.obj
-         Debug\RakNetSocket2_Vita.obj
-         Debug\RakNetSocket2_WindowsStore8.obj
-         Debug\RakNetSocket2_Windows_Linux.obj
-         Debug\RakNetSocket2_Windows_Linux_360.obj
-         Debug\RakNetStatistics.obj
-         Debug\RakNetTransport2.obj
-         Debug\RakNetTypes.obj
-         Debug\RakPeer.obj
-         Debug\RakSleep.obj
-         Debug\RakString.obj
-         Debug\RakThread.obj
-         Debug\RakWString.obj
-         Debug\Rand.obj
-         Debug\ReadyEvent.obj
-         Debug\RelayPlugin.obj
-         Debug\ReliabilityLayer.obj
-         Debug\ReplicaManager3.obj
-         Debug\Router2.obj
-         Debug\RPC4Plugin.obj
-         Debug\SecureHandshake.obj
-         Debug\SendToThread.obj
-         Debug\SHA1.obj
-         Debug\SignaledEvent.obj
-         Debug\SimpleMutex.obj
-         Debug\SocketLayer.obj
-         Debug\StatisticsHistory.obj
-         Debug\StringCompressor.obj
-         Debug\StringTable.obj
-         Debug\SuperFastHash.obj
-         Debug\TableSerializer.obj
-         Debug\TCPInterface.obj
-         Debug\TeamBalancer.obj
-         Debug\TeamManager.obj
-         Debug\TelnetTransport.obj
-         Debug\ThreadsafePacketLogger.obj
-         Debug\TwoWayAuthentication.obj
-         Debug\UDPForwarder.obj
-         Debug\UDPProxyClient.obj
-         Debug\UDPProxyCoordinator.obj
-         Debug\UDPProxyServer.obj
-         Debug\VariableDeltaSerializer.obj
-         Debug\VariableListDeltaTracker.obj
-         Debug\VariadicSQLParser.obj
-         Debug\VitaIncludes.obj
-         Debug\WSAStartupSingleton.obj
-         Debug\_FindFirst.obj
-         Debug\main.obj
-         TestServer.vcxproj -> \\storage.adsroot.itcs.umich.edu\home\windat.v2\documents\visual studio 2010\Projects\TestServer\Debug\TestServer.exe
+         All outputs are up-to-date.
+         TestServer.vcxproj -> H:\WinterWarsServer\TestServer\Debug\TestServer.exe
        FinalizeBuildStatus:
          Deleting file "Debug\TestServer.unsuccessfulbuild".
          Touching "Debug\TestServer.lastbuildstate".
-     1>Done Building Project "\\storage.adsroot.itcs.umich.edu\home\windat.V2\documents\visual studio 2010\Projects\TestServer\TestServer\TestServer.vcxproj" (build target(s)).
+     1>Done Building Project "H:\WinterWarsServer\TestServer\TestServer\TestServer.vcxproj" (build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:17.91
+Time Elapsed 00:06:10.41
