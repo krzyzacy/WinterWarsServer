@@ -432,7 +432,8 @@ enum DefaultMessageIDTypes
 
 	// communication within game
 
-	BUILDING
+	BUILDING,
+	PLAYER_MOVEMENT
 };
 
 #endif // RAKNET_USE_CUSTOM_PACKET_IDS

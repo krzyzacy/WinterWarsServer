@@ -221,6 +221,18 @@ int main(void)
 
 				}
 				break;
+		
+		case PLAYER_MOVEMENT:	//I copy pasted the handling for this so it just sends it to the server
+				{
+					printf("Player Movement Event \n");
+					for(vector<Client>::iterator it = clients.begin(); it != clients.end(); ++it)
+					{
+						if(it->ip_addr != packet->systemAddress)
+							peer->Send(&bsIn,HIGH_PRIORITY,RELIABLE_ORDERED,0,it->ip_addr,false);
+					}
+				}
+				break;
+
 			
 			default:
 				printf("Message with identifier %i has arrived.\n", packet->data[0]);
