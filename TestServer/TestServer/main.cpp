@@ -44,6 +44,9 @@ int main(void)
 	peer->Startup(MAX_CLIENTS, &sd, 1);
 
 	printf("Starting the server.\n");
+	printf("my IP address is: ");
+	printf((peer->GetSystemAddressFromGuid(peer->GetMyGUID()).ToString()));
+	printf("\n");
 	// We need to let the server accept incoming connections from the clients
 	peer->SetMaximumIncomingConnections(MAX_CLIENTS);
 
@@ -97,6 +100,8 @@ int main(void)
 				break;
 			case ID_NEW_INCOMING_CONNECTION:
 				printf("A connection is incoming.\n");
+				printf(packet->systemAddress.ToString());
+				printf("\n");
 				break;
 			case ID_DISCONNECTION_NOTIFICATION:
 				printf("A client has disconnected.\n");
@@ -209,33 +214,16 @@ int main(void)
 				}
 			}
 			break;
-
-			case BUILDING:
-				{
-					printf("Building Event \n");
-					for(vector<Client>::iterator it = clients.begin(); it != clients.end(); ++it)
-					{
-						if(it->ip_addr != packet->systemAddress)
-							peer->Send(&bsIn,HIGH_PRIORITY,RELIABLE_ORDERED,0,it->ip_addr,false);
-					}
-
-				}
-				break;
-		
-		case PLAYER_MOVEMENT:	//I copy pasted the handling for this so it just sends it to the server
-				{
-					printf("Player Movement Event \n");
-					for(vector<Client>::iterator it = clients.begin(); it != clients.end(); ++it)
-					{
-						if(it->ip_addr != packet->systemAddress)
-							peer->Send(&bsIn,HIGH_PRIORITY,RELIABLE_ORDERED,0,it->ip_addr,false);
-					}
-				}
-				break;
-
-			
+						
 			default:
 				printf("Message with identifier %i has arrived.\n", packet->data[0]);
+
+				for(vector<Client>::iterator it = clients.begin(); it != clients.end(); ++it)
+				{
+					if(it->ip_addr != packet->systemAddress)
+						peer->Send(&bsIn,HIGH_PRIORITY,RELIABLE_ORDERED,0,it->ip_addr,false);
+				}
+
 				break;
 			}
 		}
